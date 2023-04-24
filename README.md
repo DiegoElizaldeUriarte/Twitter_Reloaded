@@ -1,6 +1,4 @@
-# Fernando Carlos Aceves Díaz - A01366071
-<br/>
-# Diego Raúl Elizalde Uriarte - A01748756
+# Fernando Carlos Aceves Díaz - A01366071 <br/> Diego Raúl Elizalde Uriarte - A01748756
 <br/>
 # Twitter_Reloaded
 <br/>
