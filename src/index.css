@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-title {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app-title h1 {
+  font-size: 2.5em;
+  font-style: italic;
+  text-shadow: 1px 1px purple;
+  font-weight: bold;
+}
+
+.app-welcome h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  font-style: italic;
+  text-shadow: 1px 1px purple;
+  font-weight: bold;
+}
+
+.row-buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.custom-btn {
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
