@@ -23,3 +23,14 @@ To run the project, run:
 `npm start`
 
 This will start the server and the web application will be accessible at `http://localhost:3000`.
+
+Docker
+------
+
+To build the Docker image, navigate to the project directory and run the following command:
+
+`docker build -t twitter-reloaded .`
+
+This will create a Docker image with the tag `twitter-reloaded`. You can then run the image with the following command:
+
+`docker run -p 3000:3000 twitter-reloaded`
