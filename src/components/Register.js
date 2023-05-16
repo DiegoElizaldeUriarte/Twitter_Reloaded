@@ -24,7 +24,7 @@ export function Register() {
     setError("");
     try {
       await signup(user.email, user.password);
-      navigate("/");
+      navigate("/setUser");
     } catch (error) {
       console.log(error.code);
       if (error.code === "auth/invalid-email") {
@@ -62,7 +62,7 @@ export function Register() {
                 type="email"
                 name="email"
                 placeholder="youremail@company.com"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 onChange={handleChange}
               />
             </div>
@@ -78,7 +78,7 @@ export function Register() {
                 name="password"
                 id="password"
                 placeholder="******"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 onChange={handleChange}
               />
             </div>

@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/authContext";
-import "./App.css";
 import { Home } from "./components/Home";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { Login } from "./components/Login";
 import { Register } from "./components/Register";
 import { ForgotPassword } from "./components/ForgotPassword";
+import TweetThread from "./components/Tweets/TweetThread";
+import EventDashboard from "./components/EventDashboard/EventDashboard";
+import { SetUser } from "./components/SetUser";
 
 function App() {
   return (
@@ -17,6 +19,30 @@ function App() {
             element={
               <ProtectedRoute>
                 <Home />
+              </ProtectedRoute>
+            }
+          ></Route>
+          <Route
+            path="/thread"
+            element={
+              <ProtectedRoute>
+                <TweetThread />
+              </ProtectedRoute>
+            }
+          ></Route>
+          <Route
+            path="/setUser"
+            element={
+              <ProtectedRoute>
+                <SetUser />
+              </ProtectedRoute>
+            }
+          ></Route>
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <EventDashboard />
               </ProtectedRoute>
             }
           ></Route>

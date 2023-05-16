@@ -80,7 +80,7 @@ export function Login() {
                 type="email"
                 name="email"
                 placeholder="youremail@company.com"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 onChange={handleChange}
               />
             </div>
@@ -92,7 +92,7 @@ export function Login() {
                 name="password"
                 id="password"
                 placeholder="******"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 onChange={handleChange}
               />
             </div>
