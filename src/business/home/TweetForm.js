@@ -46,6 +46,7 @@ const TweetForm = (props) => {
 
   const createTweet = async (tweetObject) => {
     await addDoc(collection(db, "tweets"), tweetObject);
+
     await addDoc(collection(db, "events"), {
       typeOfAction: "createTweet",
       user: props.user.displayName,

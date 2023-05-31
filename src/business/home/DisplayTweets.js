@@ -26,10 +26,23 @@ const DisplayTweets = (props) => {
           return b.date - a.date;
         });
         const slicedArray = docs.slice(0, 10);
+        localStorage.setItem("tweets", JSON.stringify(slicedArray));
         setTweets(slicedArray);
       });
     } catch (error) {
-      alert("Error al obtener los tweets");
+      getTweetsCache();
+    }
+  };
+
+  const getTweetsCache = () => {
+    let array;
+
+    try {
+      array = JSON.parse(localStorage.getItem("tweets"));
+      console.log(array);
+      setTweets(array);
+    } catch (error) {
+      alert("Error al intentar obtener Tweets");
     }
   };
 
